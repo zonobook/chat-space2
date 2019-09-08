@@ -5,10 +5,37 @@
     height: 100px;
     background-color: white;
     border-bottom: solid 1px #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    a{
+      color: $blue;
+      text-decoration: none;
+    }
+    &__left-box{
+      padding-top: 35px;
+      &__current-group{
+        font-size: 20px;
+        color: #333333;
+      }
+      &__member-list{
+        padding-top: 15px;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+    &__edit-btn{
+    border: solid 1px $blue;
+    height: 40px;
+    margin-top: 28px;
+    padding: 0 20px;
+    line-height: 40px;
+    }
   }
   .messages{
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
+    padding: 0 40px;
   }
   .form{
     background-color: #ddd;
