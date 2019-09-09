@@ -21,7 +21,7 @@
       &__member-list{
         padding-top: 15px;
         font-size: 12px;
-        color: #999999;
+        color: $gray;
       }
     }
     &__edit-btn{
@@ -33,9 +33,31 @@
     }
   }
   .messages{
-    height: calc(100vh - 100px - 90px);
+    height: calc(100vh - 236px);
     background-color: #fafafa;
-    padding: 0 40px;
+    padding: 46px 40px 0;
+    overflow: scroll;
+    .message{
+      &__upper-info{
+        display: flex;
+        &__talker{
+          font-size: 16px;
+          font-weight: bold;
+          color: #434a54;
+          padding-bottom: 10px;
+        }
+        &__date{
+          font-size: 12px;
+          color: $gray;
+          padding-left: 10px;
+        }
+      }
+      &__text{
+        font-size: 14px;
+        color: #434a54;
+        margin-bottom: 40px;
+      }
+    }
   }
   .form{
     background-color: #ddd;
