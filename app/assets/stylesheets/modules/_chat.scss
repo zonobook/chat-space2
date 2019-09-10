@@ -62,5 +62,34 @@
   .form{
     background-color: #ddd;
     height: 90px;
+    padding: 20px 40px 0;
+    position: relative;
+    .new-message{
+      display: flex;
+    }
+    &__message{
+      height: 50px;
+      width: 100%;
+    }
+    &__mask{
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 165px;
+
+      &__image{
+        font-size: 1.3rem;
+      }
+    }
+    .hidden{
+      display: none;
+    }
+    &__submit{
+      background-color: $blue;
+      color: $white;
+      margin-left: 15px;
+      width: 120px;
+    }
   }
 }
