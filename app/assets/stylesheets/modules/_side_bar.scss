@@ -22,10 +22,6 @@
         }
         &__menu {
           display: flex;
-          a {
-            color: $white;
-            text-decoration: none;
-          }
           &__new-group {
             padding-right: 5px;
           }
@@ -48,4 +44,8 @@
       }
     }
   }
+}
+a {
+  color: $white;
+  text-decoration: none;
 }
