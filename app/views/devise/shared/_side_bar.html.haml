@@ -12,12 +12,9 @@
             = fa_icon 'cog', class: 'icon'
   .groups
     .group
-      %p.group__group-name
-        = "超平和バスターズ"
-      %p.group__latest-message
-        = "まだメッセージはありません"
-    .group
-      %p.group__group-name
-        = "ハルレオ"
-      %p.group__latest-message
-        = "まだメッセージはありません"
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          %p.group__group-name
+            = group.name
+          %p.group__latest-message
+            メッセージはまだありません
