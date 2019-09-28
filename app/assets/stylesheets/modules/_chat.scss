@@ -61,25 +61,28 @@
   }
   .form{
     background-color: #ddd;
-    height: 90px;
+    height: 70px;
     padding: 20px 40px 0;
     position: relative;
     .new-message{
       display: flex;
+      width: 100%;
     }
     &__message{
       height: 50px;
-      width: 100%;
+      padding-left: 10px;
+      width: calc(100% - 135px);
     }
     &__mask{
       height: 50px;
-      display: flex;
-      align-items: center;
+      line-height: 50px;
       position: absolute;
-      right: 170px;
+      right: 175px;
+      top: 22px;
 
       &__image{
         font-size: 1.3rem;
+        cursor: pointer;
       }
     }
     .hidden{
@@ -87,9 +90,10 @@
     }
     &__submit{
       background-color: $blue;
+      height: 50px;
       color: $white;
       margin-left: 15px;
-      width: 120px;
+      width: 100px;
     }
   }
 }
