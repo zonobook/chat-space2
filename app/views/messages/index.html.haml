@@ -5,9 +5,11 @@
     .main-header
       .main-header__left-box
         .main-header__left-box__current-group
-          = "ハルレオ"
+          = @group.name
         .main-header__left-box__member-list
-          = "Member: kami, ハル, レオ"
+          Member:
+          - @group.users.each do |user|
+            = user.name
       .main-header__edit-btn
         = link_to  do
           = "Edit"
