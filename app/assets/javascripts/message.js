@@ -29,6 +29,13 @@ $(document).on('turbolinks:load',function() {
       var html = buildHTML(data);
       $('.messages').append(html);
       $('#new_message')[0].reset();
+      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
+    })
+    .fail(function(data){
+      alert('メッセージが入力されていません');
+    })
+    .always(function(data){
+      $('.form__submit').prop("disabled", false);
     })
   })
 })
