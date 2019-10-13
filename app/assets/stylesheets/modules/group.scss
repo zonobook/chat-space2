@@ -53,6 +53,7 @@ li {
     box-sizing: border-box;
   }
   &__action-btn {
+    margin-top: 15px;
     display: inline-block;
     padding: 12px 20px;
     color: #fff;
@@ -85,6 +86,8 @@ li {
   line-height: 50px;
   font-size: 14px;
   border-bottom: 1px solid #ddd;
+  width: 600px;
+  float: right;
   &:after {
     content: "";
     clear: both;
